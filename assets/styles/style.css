@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00ac00;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.button {
+    background-color: #00ac00;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%; 
+    display:block; 
+    height: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #212529;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+    margin-top: 200px;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 0.321em;
+    margin-left: 30px;
+}
+
+.top {
+    font-size: 20px;
+    background-color: #212529;
+    text-align: left;
+    color: white;
+    position: fixed;
+    top: 100;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+
+aside {
+    float: right;
+    padding-left: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+h1, h2, h3, p, tr, td, figcaption {
+    color: white;
+}
+
+th, td {
+    text-align: left;
+    margin-left: 10px;
+}
+
+th {
+    color: darkgrey;
+}
+
+nav {
+    color: white;
+    float: right;
+    background-color: #212529;
+    top: 0;
+}
+
+nav li {
+    display: inline-flex;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    font-size: 18px;
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+footer {
+    padding: 60px;
+    color: white;
+    background-color: #212529;
+    text-align: center;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.footer-content img {
+    display: block;
+    margin: 0 auto;
+    width: 220px;
+    height: 50px;
+}
+
+.profile img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile header,section {
+    text-align: center;
+}
+
+.profile table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile div {
+    text-align: center;
+}
+
+.content-beranda {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+  
+.content-item-left {
+    flex: 20%;
+}
+  
+.content-item-right {
+    flex: 40%;
+    padding: 10px;
+}
+
+.content-item-right h2,p {
+    margin-left: 10px;
+}
+
+.column-mitra {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    nav,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column-mitra {
+      width: 100%;
+      display: block;
+      margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-beranda {
+        flex-direction: column;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
